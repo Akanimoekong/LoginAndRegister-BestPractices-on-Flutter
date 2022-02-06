@@ -48,3 +48,28 @@ class TextContainer2 extends StatelessWidget {
     );
   }
 }
+
+class TextContainer3 extends StatelessWidget {
+  final String mytext;
+  const TextContainer3(
+      {Key? key,
+        required this.mytext}) :
+        super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      alignment: Alignment.topLeft,
+      child: const Padding(
+        padding: EdgeInsets.all(15.0),
+        child: Text(
+          "Username:",
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
+    );
+  }
+}

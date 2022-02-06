@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login_register_best_practices/pages/loginpage.dart';
+import 'package:login_register_best_practices/pages/signuppage.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -8,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      home: SignUpPage(),
     );
   }
 }
