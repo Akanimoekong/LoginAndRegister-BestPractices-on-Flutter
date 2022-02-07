@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_register_best_practices/widgets/bottomNavi.dart';
 import 'package:login_register_best_practices/widgets/mybutton.dart';
 import 'package:login_register_best_practices/widgets/mytextbox.dart';
 import 'package:login_register_best_practices/widgets/mytextcontainer.dart';
@@ -25,9 +26,9 @@ class _SignUpPageState extends State<SignUpPage> {
         body: Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
-              fit: BoxFit.cover,
-              opacity: 50,
-              image: AssetImage("background2.jpg"),
+              fit: BoxFit.fill,
+              opacity: 30,
+              image: AssetImage("assets/background2.jpg"),
             ),
           ),
           child: Center(
@@ -48,6 +49,7 @@ class _SignUpPageState extends State<SignUpPage> {
             ),
           ),
         ),
+        bottomNavigationBar: BottomNavi(),
       ),
     );
   }
